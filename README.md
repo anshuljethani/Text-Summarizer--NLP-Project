@@ -4,4 +4,6 @@ pergasus cnn dailymail
 
 samsum dataset
 
-![image](https://github.com/user-attachments/assets/5d0f18d9-8e52-4ca7-a587-76dc1b974871)
+
+![Screenshot 2024-09-15 at 9 37 22 PM](https://github.com/user-attachments/assets/9f58eb1f-c83c-4f62-b851-e5b0e73bbe89)
+
