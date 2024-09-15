@@ -1,0 +1,93 @@
+#bashscript
+/Users/anshuljethani/Desktop/git clone/Text-Summarization-NLP-Project/venv/lib/python3.12/site-packages/transformers/training_args.py:1525: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+  0%|▏                                                                                | 2/920 [01:01<8:22:10, 32.82s/it]
+
+Took 2 hours to execute, so had to train the model on the test data and also had to optimize the parameters in order for time efficiency.
+After optimising,Final output-
+
+(/Users/anshuljethani/Desktop/NLPproject/Text-Summarizer--NLP-Project/venv) (base) anshuljethani@Anshs-MacBook-Pro Text-Summarizer--NLP-Project % PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 python main.py
+[2024-09-13 19:31:43,139: INFO: config: PyTorch version 2.4.1 available.]
+[2024-09-13 19:31:43,489: INFO: main: *** Data Ingestion stage started *** ]
+[2024-09-13 19:31:43,490: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-13 19:31:43,491: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-13 19:31:43,491: INFO: common: created directory at: artifacts]
+[2024-09-13 19:31:43,491: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-13 19:31:46,420: INFO: data_ing: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: CE75:3F1202:43D6C8:53CFE0:66E445C7
+Accept-Ranges: bytes
+Date: Fri, 13 Sep 2024 14:01:44 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4720-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1726236104.202691,VS0,VE742
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 66d55984b41ca18b47131b1748c883d90a292d8e
+Expires: Fri, 13 Sep 2024 14:06:44 GMT
+Source-Age: 0
+
+]
+[2024-09-13 19:31:46,496: INFO: main: *** Data Ingestion stage completed *** 
+
+x==========x]
+[2024-09-13 19:31:46,496: INFO: main: *** Data Validation stage is getting started *** ]
+[2024-09-13 19:31:46,497: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-13 19:31:46,498: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-13 19:31:46,498: INFO: common: created directory at: artifacts]
+[2024-09-13 19:31:46,498: INFO: common: created directory at: artifacts/data_validation]
+[2024-09-13 19:31:46,498: INFO: main: *** Data Validation stage completed *** 
+
+x==========x]
+[2024-09-13 19:31:46,498: INFO: main: *** Data Transformation stage is getting started *** ]
+[2024-09-13 19:31:46,499: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-13 19:31:46,500: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-13 19:31:46,500: INFO: common: created directory at: artifacts]
+[2024-09-13 19:31:46,500: INFO: common: created directory at: artifacts/data_transformation]
+/Users/anshuljethani/Desktop/NLPproject/Text-Summarizer--NLP-Project/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Map:   0%|                                                        | 0/14732 [00:00<?, ? examples/s]/Users/anshuljethani/Desktop/NLPproject/Text-Summarizer--NLP-Project/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:4126: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+Map: 100%|██████████████████████████████████████████| 14732/14732 [00:01<00:00, 9443.01 examples/s]
+Map: 100%|██████████████████████████████████████████████| 819/819 [00:00<00:00, 9086.36 examples/s]
+Map: 100%|██████████████████████████████████████████████| 818/818 [00:00<00:00, 9250.46 examples/s]
+Saving the dataset (1/1 shards): 100%|███████████| 14732/14732 [00:00<00:00, 1246907.20 examples/s]
+Saving the dataset (1/1 shards): 100%|████████████████| 819/819 [00:00<00:00, 414270.98 examples/s]
+Saving the dataset (1/1 shards): 100%|████████████████| 818/818 [00:00<00:00, 431456.32 examples/s]
+[2024-09-13 19:31:48,993: INFO: main: *** Data Transformation stage completed *** 
+
+x==========x]
+[2024-09-13 19:31:48,993: INFO: main: *******************]
+[2024-09-13 19:31:48,993: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-09-13 19:31:48,994: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-13 19:31:48,995: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-13 19:31:48,995: INFO: common: created directory at: artifacts]
+[2024-09-13 19:31:48,995: INFO: common: created directory at: artifacts/model_trainer]
+Some weights of PegasusForConditionalGeneration were not initialized from the model checkpoint at google/pegasus-cnn_dailymail and are newly initialized: ['model.decoder.embed_positions.weight', 'model.encoder.embed_positions.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/Users/anshuljethani/Desktop/NLPproject/Text-Summarizer--NLP-Project/venv/lib/python3.12/site-packages/transformers/training_args.py:1525: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+100%|███████████████████████████████████████████████████████████████| 3/3 [40:44<00:00, 790.49s/it]                                       Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 128, 'min_length': 32, 'num_beams': 8, 'length_penalty': 0.8, 'forced_eos_token_id': 1}
+{'train_runtime': 2453.6696, 'train_samples_per_second': 0.067, 'train_steps_per_second': 0.001, 'train_loss': 20.260008494059246, 'epoch': 0.23}
+100%|███████████████████████████████████████████████████████████████| 3/3 [40:53<00:00, 817.89s/it]
+Some non-default generation parameters are set in the model config. These should go into a GenerationConfig file (https://huggingface.co/docs/transformers/generation_strategies#save-a-custom-decoding-strategy-with-your-model) instead. This warning will be raised to an exception in v4.41.
+Non-default generation parameters: {'max_length': 128, 'min_length': 32, 'num_beams': 8, 'length_penalty': 0.8, 'forced_eos_token_id': 1}
+[2024-09-13 20:12:51,526: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+
+
+But after this happened the efficiency of the model would have dropped significantly. But our main focus was to learn end to end project deployment and the processes that go alogn with it.
